@@ -29,7 +29,7 @@ This is a command-line tool that converts subtitles in VTT or SRT format (direct
 1.
 python dir_vtt.py input_directory output_file.md
 Example:
-python dir_srt.py "D:\D\Pagawean\video\Finance\SSCP Cert Prep - 3 Risk Identification, Monitoring, and Analysis (2021)" 2 output.md 
+python dir_srt.py "D:\D\Pagawean\video\Finance\SSCP Cert Prep - 3 Risk Identification, Monitoring, and Analysis (2021)" 2 risk.md 
 
 2.
 python dir_srt.py input_directory depth_of_directory output_file.md
@@ -47,12 +47,18 @@ Example:
 python extract_vtt.py chomsky.vtt zizek.txt
 ```
 
+5.
+python extract_ttml.py input.ttml output.txt
+Example:
+python extract_ttml.py zp.ttml eekpeter.txt
+
 ## Supported Formats
 
 This tool supports the following subtitle formats:
 
 - VTT (WebVTT)
 - SRT (SubRip)
+- TTML (Timed Text Markup Language)
 
 ## Limitations
 
