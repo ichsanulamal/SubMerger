@@ -1,5 +1,3 @@
-Sure, here's an example README.md file for a project that converts subtitles in VTT or SRT format to a single e-book in TXT or MD format:
-
 # Subtitle to E-Book Converter
 
 This is a command-line tool that converts subtitles in VTT or SRT format (directories or single text) to a single e-book in TXT or MD format. 
