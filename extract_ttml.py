@@ -2,7 +2,8 @@ import argparse
 import re
 import xml.etree.ElementTree as ET
 
-def extract_text(input_file, output_file):
+def extract_text(input_file):
+    output_file = input_file.replace(".ttml", ".txt")
     with open(output_file, 'w') as f:
         tree = ET.parse(input_file)
         root = tree.getroot()
@@ -19,6 +20,5 @@ def extract_text(input_file, output_file):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('input_file', help='Input TTML file')
-    parser.add_argument('output_file', help='Output TXT file')
     args = parser.parse_args()
-    extract_text(args.input_file, args.output_file)
+    extract_text(args.input_file)

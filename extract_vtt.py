@@ -2,7 +2,8 @@ import argparse
 import re
 import webvtt
 
-def extract_text(input_file, output_file):
+def extract_text(input_file):
+    output_file = input_file.replace(".vtt", ".txt")
     with open(output_file, 'w') as f:
         captions = webvtt.read(input_file)
         text = ' '.join(caption.text.strip() for caption in captions)
@@ -12,6 +13,5 @@ def extract_text(input_file, output_file):
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()
     parser.add_argument('input_file', help='Input VTT file')
-    parser.add_argument('output_file', help='Output TXT file')
     args = parser.parse_args()
-    extract_text(args.input_file, args.output_file)
+    extract_text(args.input_file)

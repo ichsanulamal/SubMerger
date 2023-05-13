@@ -1,6 +1,6 @@
 # Subtitle to E-Book Converter
 
-This is a command-line tool that converts subtitles in VTT or SRT format (directories or single text) to a single e-book in TXT or MD format. 
+This is a command-line tool that converts subtitles in VTT or SRT or TTML format (directories or single text) to a single e-book in TXT or MD format. 
 
 ## Requirements
 
@@ -27,6 +27,17 @@ This is a command-line tool that converts subtitles in VTT or SRT format (direct
 
 ```
 1.
+`python main.py <YOUR_FILE>`
+Example:
+python main.py C:\Users\ichsan\Documents\proj\ref\m.ttl
+```
+
+
+
+### Directory
+
+```
+1.
 python dir_vtt.py input_directory output_file.md
 Example:
 python dir_srt.py "D:\D\Pagawean\video\Finance\SSCP Cert Prep - 3 Risk Identification, Monitoring, and Analysis (2021)" 2 risk.md 
@@ -35,22 +46,7 @@ python dir_srt.py "D:\D\Pagawean\video\Finance\SSCP Cert Prep - 3 Risk Identific
 python dir_srt.py input_directory depth_of_directory output_file.md
 Example:
 python dir_vtt.py "D:\\D\\Pagawean\\video\\Cloud\\Coursera - Google IT Support Professional Certificate [Complete] [FCO]" output.md
-
-3.
-python extract_srt.py input_file.srt output_file.txt
-Example:
-python extract_srt.py inside.srt inside.txt
-
-4.
-python extract_vtt.py input_file.srt output_file.txt
-Example:
-python extract_vtt.py chomsky.vtt zizek.txt
 ```
-
-5.
-python extract_ttml.py input.ttml output.txt
-Example:
-python extract_ttml.py zp.ttml eekpeter.txt
 
 ## Supported Formats
 
