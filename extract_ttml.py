@@ -1,6 +1,7 @@
 import argparse
 import re
 import xml.etree.ElementTree as ET
+from src.paragraph_splitter import split_paragraphs
 
 def extract_text(input_file):
     output_file = input_file.replace(".ttml", ".txt")
@@ -15,7 +16,7 @@ def extract_text(input_file):
         # Remove leading/trailing spaces and newlines
         paragraph = paragraph.strip()
         paragraph = re.sub(r'\n+', '\n', paragraph)
-        f.write(paragraph)
+        f.write(split_paragraphs(paragraph))
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser()

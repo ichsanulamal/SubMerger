@@ -1,5 +1,6 @@
 import argparse
 import re
+from src.paragraph_splitter import split_paragraphs
 
 def extract_text_from_srt(input_file_path):
     with open(input_file_path, 'r', encoding="utf8") as f:
@@ -14,7 +15,7 @@ def extract_text_from_srt(input_file_path):
 
     output_file = input_file_path.replace(".srt", ".txt")
     with open(output_file, 'a', encoding="utf8") as f:
-        f.write(text)
+        f.write(split_paragraphs(text))
 
 if __name__ == '__main__':
     parser = argparse.ArgumentParser(description='Extract text from an SRT file.')
