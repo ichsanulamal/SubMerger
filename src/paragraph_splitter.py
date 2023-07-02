@@ -25,7 +25,7 @@ def split_paragraphs(text, words_per_paragraph=200):
             current_paragraph += word + ' '
             word_count += 1
 
-            if word_count >= words_per_paragraph and word.endswith('.'):
+            if word_count >= words_per_paragraph:
                 paragraphs.append(current_paragraph.strip())
                 current_paragraph = ''
                 word_count = 0

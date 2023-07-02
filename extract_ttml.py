@@ -11,7 +11,10 @@ def extract_text(input_file):
         ns = {'ttml': 'http://www.w3.org/ns/ttml'}
         paragraph = ''
         for p in root.findall('.//ttml:p', ns):
-            text = p.text.strip()
+            try:
+                text = p.text.strip()
+            except:
+                print(p.text)    
             paragraph += f'{text} '
         # Remove leading/trailing spaces and newlines
         paragraph = paragraph.strip()

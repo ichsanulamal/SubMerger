@@ -12,10 +12,10 @@ def convert_srt_to_md(file_path, num_depth_of_dir):
     for sub in subs:
         # Split the subtitle into paragraphs by newlines and add each paragraph with a blank line between them
         for paragraph in sub.text.strip().split("\n"):
-            md_output += f"{paragraph}"
+            md_output += f"{paragraph}" + " "
 
         # Add a blank line after each subtitle
-        md_output += " "
+        # md_output += " "
 
     # Return the Markdown output
     return md_output
@@ -31,10 +31,10 @@ def convert_all_srt_to_md(directory_path, num_depth_of_dir, output_file):
     # Convert each .srt file to Markdown and concatenate the output
     md_output = ""
     for srt_file in srt_files:
-        md_output += convert_srt_to_md(srt_file, num_depth_of_dir)
+        md_output += convert_srt_to_md(srt_file, num_depth_of_dir) + "\n\n"
 
     # Save the output to a single .md file
-    with open(output_file, "w") as f:
+    with open(output_file, "w", encoding='utf-8') as f:
         f.write(md_output)
 
 if __name__ == '__main__':
