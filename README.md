@@ -32,6 +32,8 @@ Example:
 python main.py C:\Users\ichsan\Documents\proj\ref\m.ttl
 ```
 
+`ffmpeg -i input_video.mp4 -vn -an -codec:s:0 srt output_subtitle.srt`
+
 
 
 ### Directory
