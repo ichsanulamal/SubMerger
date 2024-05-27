@@ -28,8 +28,8 @@ def process_files(directory):
     doc = Document("Output")
     prev_category = ""
     for root, dirs, files in sorted(os.walk(directory)):
-        for name in files:
-            if name.endswith("vtt"):
+        for name in sorted(files):
+            if name.endswith("en.vtt"):
                 category = root.split('/')[-1]
                 print(category)
                 if category != prev_category:
