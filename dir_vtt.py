@@ -31,7 +31,6 @@ def process_files(directory):
         for name in sorted(files):
             if name.endswith("en.vtt"):
                 category = root.split('/')[-1]
-                print(category)
                 if category != prev_category:
                     doc.add_paragraph("<hr>")
                     doc.add_header(category, level=1)
