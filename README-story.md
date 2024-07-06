@@ -1,5 +1,3 @@
-# Me love chatgpt :*
-
 - what is the average minute / seconds for someone to speak in the same amount of paragprah?
 
 To determine the average speaking time for someone to deliver the provided paragraph, we need to consider various factors such as speaking pace, pauses, and individual speaking style. On average, a person speaking at a moderate pace can deliver around 100-150 words per minute. However, this can vary significantly depending on the speaker's natural rhythm and the content being spoken.
