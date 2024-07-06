@@ -1,21 +1,15 @@
-# Subtitle to E-Book Converter
+# SubMerger
 
-This is a command-line tool that converts subtitles in VTT or SRT or TTML format (directories or single text) to a single e-book in TXT or MD format. 
+This is a command-line tool that converts subtitles in VTT or SRT or TTML format (directories or single text) to a single e-book in MD format. 
 
 ## Requirements
 
-- Python 3.6 or higher
 - webvtt (for VTT support)
 - pysrt (for SRT support)
 
 ## Installation
 
 1. Clone the repository:
-
-   ```
-   git clone https://github.com/yourusername/subtitle-to-ebook.git
-   cd subtitle-to-ebook
-   ```
 
 2. Install the dependencies:
 
@@ -29,10 +23,6 @@ This is a command-line tool that converts subtitles in VTT or SRT or TTML format
 1.
 `python main.py <YOUR_FILE>`
 ```
-
-`ffmpeg -i input_video.mp4 -vn -an -codec:s:0 srt output_subtitle.srt`
-
-
 
 ### Directory
 
