@@ -1,2 +1,3 @@
 snakemd==0.15
 webvtt-py
+pysrt

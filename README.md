@@ -20,7 +20,7 @@ This is a command-line tool that converts subtitles in VTT or SRT or TTML format
 2. Install the dependencies:
 
    ```
-   pip install webvtt pysrt
+   pip install -r requirements.txt
    ```
 
 ## Usage
@@ -28,8 +28,6 @@ This is a command-line tool that converts subtitles in VTT or SRT or TTML format
 ```
 1.
 `python main.py <YOUR_FILE>`
-Example:
-python main.py C:\Users\ichsan\Documents\proj\ref\m.ttl
 ```
 
 `ffmpeg -i input_video.mp4 -vn -an -codec:s:0 srt output_subtitle.srt`
@@ -41,13 +39,9 @@ python main.py C:\Users\ichsan\Documents\proj\ref\m.ttl
 ```
 1.
 python dir_vtt.py input_directory output_file.md
-Example:
-python dir_srt.py "D:\D\Pagawean\video\Finance\SSCP Cert Prep - 3 Risk Identification, Monitoring, and Analysis (2021)" 2 risk.md 
 
 2.
-python dir_srt.py input_directory depth_of_directory output_file.md
-Example:
-python dir_vtt.py "D:\\D\\Pagawean\\video\\Cloud\\Coursera - Google IT Support Professional Certificate [Complete] [FCO]" output.md
+python dir_srt.py input_directory output_file.md
 ```
 
 ## Supported Formats
