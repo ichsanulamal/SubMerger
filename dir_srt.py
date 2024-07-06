@@ -8,6 +8,7 @@ import pysrt
 def srt_to_markdown(start_path, output_file):
     with open(output_file, 'w', encoding='utf-8') as md_file:
         for root, dirs, files in os.walk(start_path):
+            dirs.sort()  
             level = root.replace(start_path, '').count(os.sep)
             indent = '#' * (level + 1)
             
