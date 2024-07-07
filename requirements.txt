@@ -1,3 +1,2 @@
-snakemd==0.15
-webvtt-py
+vtt_to_srt3
 pysrt
