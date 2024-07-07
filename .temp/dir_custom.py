@@ -16,7 +16,7 @@ def srt_to_markdown(start_path, output_file):
                 md_file.write(f"{indent} {os.path.basename(root)}\n\n")
             
             for file in sorted(files):
-                if file.endswith('.srt'):
+                if file.endswith('en.srt'):
                     srt_path = os.path.join(root, file)
                     srt_content = pysrt.open(srt_path)
                     
@@ -30,7 +30,7 @@ def srt_to_markdown(start_path, output_file):
                         if i == len(srt_content) - 1:
                             out_text += f"{sbt_text}\n\n"
                         else:
-                            out_text += f"{sbt_text}"
+                            out_text += f"{sbt_text} "
                     
                     md_file.write(out_text)
 
