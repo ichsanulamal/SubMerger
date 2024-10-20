@@ -15,4 +15,3 @@ def main():
 if __name__ == "__main__":
     main()
 
-# python convert_vtt_to_srt.py "." -r -e utf-8

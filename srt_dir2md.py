@@ -41,3 +41,5 @@ if __name__ == '__main__':
     args = parser.parse_args()
 
     srt_to_markdown(args.directory, args.output_file)
+
+# python srt_dir2md.py "/home/al/projects/ATC_notes/Gen AI/Gen AI for Delivery Practitioners - Level 2/DP01 - GenAI Introduction & Foundation" out.md
