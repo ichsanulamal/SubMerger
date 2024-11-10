@@ -1,4 +1,4 @@
-def chunk_text_file(input_file, chunk_size=10000):
+def chunk_text_file(input_file, chunk_size=15000):
     """
     Splits a text file into smaller chunks.
 
