@@ -1,2 +1,3 @@
 vtt_to_srt3
 pysrt
+openai-whisper
