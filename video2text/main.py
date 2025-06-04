@@ -53,7 +53,7 @@ def transcribe_mkv_files(input_path, output_dir=None):
     os.makedirs(transcript_dir, exist_ok=True)
     
     # Load Whisper model
-    model = whisper.load_model("small")
+    model = whisper.load_model("medium")
     
     # Walk through directory recursively
     for root, dirs, files in os.walk(input_path):
