@@ -1,0 +1,18 @@
+[project]
+name = "submerger"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.11"
+dependencies = [
+    "ollama>=0.5.1",
+    "pysrt>=1.1.2",
+    "requests>=2.32.3",
+    "srt>=3.5.3",
+    "vtt-to-srt3>=0.2.0.4",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+]
